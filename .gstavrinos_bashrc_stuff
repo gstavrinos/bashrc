@@ -22,5 +22,9 @@ alias weather-athens='curl wttr.in/Athens,Greece'
 alias weather-cholargos='curl wttr.in/Cholargos'
 # check my public ip
 alias public-ip='curl ifconfig.co'
+# apt update & apt full-upgrade
+alias update='sudo apt update && sudo apt full-upgrade'
+# apt update & apt full-upgrade (auto accept)
+alias updatey='sudo apt update && sudo apt full-upgrade --yes' 
 # shortcut to rosdep_install from workspace root and ROS2 Galactic
 alias rosdep_install='rosdep install -i --from-path src --rosdistro galactic -y'
