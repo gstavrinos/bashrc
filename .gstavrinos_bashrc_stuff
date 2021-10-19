@@ -14,6 +14,10 @@ transfer(){ if [ $# -eq 0 ];then echo "No arguments specified.\nUsage:\n  transf
 alias upload='transfer'
 # shortcut to colcon build
 alias cb='colcon build --symlink-install'
+# shortcut to colcon build with the release flag
+alias cbr='colcon build --symlink-install --cmake-args -DCMAKE_BUILD_TYPE=Release'
+# shortcut to colcon build with the debug flag
+alias cbd='colcon build --symlink-install --cmake-args -DCMAKE_BUILD_TYPE=Debug'
 # weather in Peiraias
 alias weather-peiraias='curl wttr.in/Peiraias'
 # weather in Athens
@@ -22,9 +26,9 @@ alias weather-athens='curl wttr.in/Athens,Greece'
 alias weather-cholargos='curl wttr.in/Cholargos'
 # check my public ip
 alias public-ip='curl ifconfig.co'
+# shortcut to rosdep_install from workspace root and ROS2 Galactic
+alias rosdep_install='rosdep install -i --from-path src --rosdistro galactic -y'
 # apt update & apt full-upgrade
 alias update='sudo apt update && sudo apt full-upgrade'
 # apt update & apt full-upgrade (auto accept)
-alias updatey='sudo apt update && sudo apt full-upgrade --yes' 
-# shortcut to rosdep_install from workspace root and ROS2 Galactic
-alias rosdep_install='rosdep install -i --from-path src --rosdistro galactic -y'
+alias updatey='sudo apt update && sudo apt full-upgrade --yes'
