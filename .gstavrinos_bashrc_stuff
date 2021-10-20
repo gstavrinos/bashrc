@@ -3,6 +3,11 @@ function cd {
     builtin cd "$@" && ls -F
 }
 
+# mkdir and then cd at the end
+function mkdircd () {
+    mkdir -p "$@" && eval cd "$_";
+}
+
 # check the weather
 weather() {
     curl wttr.in/"$1"
