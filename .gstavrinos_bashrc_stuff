@@ -39,6 +39,8 @@ alias weather-cholargos='curl wttr.in/Cholargos'
 alias public-ip='curl ifconfig.co'
 # shortcut to rosdep_install from workspace root and ROS2 Galactic
 alias rosdep_install='rosdep install -i --from-path src --rosdistro galactic -y'
+# apt update & apt list -upgradable
+alias update-list='sudo apt update && sudo apt list --upgradable'
 # apt update & apt full-upgrade
 alias update='sudo apt update && sudo apt full-upgrade'
 # apt update & apt full-upgrade (auto accept)
