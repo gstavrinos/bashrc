@@ -25,6 +25,8 @@ transfer(){ if [ $# -eq 0 ];then echo "No arguments specified.\nUsage:\n  transf
 alias upload='transfer'
 # shortcut to colcon build
 alias cb='colcon build --symlink-install'
+# shortcut to colcon build (+ continue)
+alias cbc='colcon build --symlink-install --continue-on-error'
 # shortcut to colcon build with the release flag
 alias cbr='cb --cmake-args -DCMAKE_BUILD_TYPE=Release'
 # shortcut to colcon build with the debug flag
