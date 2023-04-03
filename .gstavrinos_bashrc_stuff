@@ -53,3 +53,4 @@ alias update-list='sudo apt update && sudo apt list --upgradable'
 alias update='sudo apt update && sudo apt full-upgrade'
 # apt update & apt full-upgrade (auto accept)
 alias updatey='sudo apt update && sudo apt full-upgrade --yes'
+alias nv='nvim'
