@@ -54,3 +54,9 @@ alias update='sudo apt update && sudo apt full-upgrade'
 # apt update & apt full-upgrade (auto accept)
 alias updatey='sudo apt update && sudo apt full-upgrade --yes'
 alias nv='nvim'
+# GPG passphrase in terminal
+# Needs
+# sudo apt install pinentry-tty
+# and
+# sudo update-alternatives --set pinentry /usr/bin/pinentry-tty
+export GPG_TTY=$(tty)
